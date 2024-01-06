@@ -1,0 +1,196 @@
+/* Dashboard.css */
+
+.dashbord-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  /* background-image: url(../../Assets/Images//mainbodylogo.jpeg); */
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+}
+
+.dashboard-card,
+.dashboard-big-card {
+  background: #ffffffef;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+}
+
+.dashboard-card {
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+  
+}
+.amount{
+  border: 2px solid #198754;
+  box-shadow: 2px 2px 20px #198754;
+  color: #198754;
+}
+
+.dashboard-big-card {
+  width: 1300px;
+  /* margin-top: 50px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.monthly-amount-heading,
+.total-closed-cases-heading,
+.total-approach-heading,
+.pending-cases-heading,
+.total-amount-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.pending-cases{
+  border: 2px solid red;
+  color: red;
+  text-align: center;
+  box-shadow: 1px 1px 15px rgba(255, 0, 0, 0.603);
+}
+.total-closed-cases{
+  border: 2px solid #a4c639;
+  box-shadow: 1px 3px 20px #a4c639;
+  text-align: center;
+  
+}
+.cards{
+  border: 2px solid #a4c639;
+  box-shadow: 1px 3px 20px #a4c639;
+  color: #a4c639;
+  text-align: center;
+}
+
+.card-value {
+  font-size: 54px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  /* color: #a4c639; */
+}
+.OPcard-value {
+  font-size: 54px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #a4c639;
+}
+.card-pending-value {
+  font-size: 54px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+
+.operaterCards{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+}
+.operaterCards2{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+}
+.status-Section{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Download-excel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  gap: 20px;
+}
+.Download-excel button{
+  background-color: rgb(164, 198, 57);
+    color: white;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 4px;
+    font-size: 25px;
+    height: fit-content;
+    width: 50vw;
+    cursor: pointer;
+}
+.Download-excel button:disabled{
+  background-color: lightgray;
+}
+.Download-excel .inputDiv{
+  padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 61%;
+    font-weight: bold;
+}
+.Download-excel .inputDiv label{
+ margin: 0px;
+ font-size: 25px;
+ width: 50%;
+}
+.Download-excel .inputDiv input{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #a4c639;
+  box-shadow: 1px 3px 20px #a4c639;
+  font-size: 25px;
+  width: 50%;
+}
+.dashboard-heading h3{
+  margin: 50px 0px 0px 50px;
+  color: #fff;
+  background-color: #B2CF57;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .operaterCards,
+  .operaterCards2,
+  .status-Section,
+  .Download-excel {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+
+  .Download-excel .inputDiv {
+    width: 100%; /* Make inputDiv full width on smaller screens */
+  }
+
+  .dashboard-heading h3 {
+    margin: 20px 0 0 0; /* Adjust margin for smaller screens */
+  }
+}
+/* dkjfhvjdbvgskdgvdcvkjb */
+@media only screen and (max-width: 600px) {
+
+  .Download-excel .inputDiv{
+    width: 100%;
+    flex-direction: column;
+  }
+  .Download-excel .inputDiv input ,.Download-excel .inputDiv label{
+    width: 100%;
+  }
+  .operaterCards{
+    display: block;
+    width: 100%;
+  }
+  .dashboard-big-card ,.status-Section{
+    display: block;
+  }
+}

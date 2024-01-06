@@ -1,0 +1,102 @@
+.close-icon {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 999;
+  }
+
+  .patient-documents-sidebar{
+    width: 100%;
+    position: relative;
+  }
+
+  /* .docInput{
+    max-width: 100px;
+  } */
+.btn-docDelete,
+.btn-docAdd,
+.btn-docSubmit
+{
+  background-color: #a4c639;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  width: 15%;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 20px 0; /* Adjusted margin for smaller screens */
+  cursor: pointer;
+}
+
+.btn-docSubmit{
+  /* background-color: initial; */
+  /* background-image: linear-gradient(-180deg, #00D775, #00BD68); */
+  background-color:#a4c639;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+}
+.submit{
+  margin-top: 50px !important;
+}
+
+.btn-docSubmit:disabled{
+  background-color:lightgrey;
+}
+
+
+
+.btn-docDelete{
+    background-color: red;
+    margin: 0;
+}
+
+.form-input1 {    padding: 5px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .upload-input-tr{
+    display: flex;
+    flex-direction: column;
+  }
+  .upload-input-tr td{
+    border: none;
+   width: 100%;
+  }
+  .upload-input-tr td .btn-docDelete{
+   width: 30%;
+  }
+.btn-docAdd{
+  width: 25%;
+  font-size: 11px;
+}
+}
